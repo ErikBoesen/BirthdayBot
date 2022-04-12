@@ -14,8 +14,7 @@ yalies_api = yalies.API(config['yalies_api_key'])
 
 def get_students():
     date = datetime.date.today()
-    print({'college_code': 'GH', 'birth_month': date.month, 'birth_day': date.day - 1})
-    students = yalies_api.people(filters={'college_code': 'GH', 'birth_month': date.month, 'birth_day': date.day - 1})
+    students = yalies_api.people(filters={'college_code': 'GH', 'birth_month': date.month, 'birth_day': date.day})
     return [student.first_name + ' ' + student.last_name for student in students]
 
 
