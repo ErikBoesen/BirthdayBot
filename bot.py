@@ -8,7 +8,7 @@ import json
 
 with open('config.json', 'r') as f:
     config = json.load(f)
-bot = mebots.Bot('butteur_bot', config['mebots_token'])
+bot = mebots.Bot('hopper_birthday_bot', config['mebots_token'])
 yalies_api = yalies.API(config['yalies_api_key'])
 
 
