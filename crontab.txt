@@ -1,1 +1,2 @@
+# Note: running on jaguar zoo node
 0 8 * * * cd ~/BirthdayBot && python3 bot.py
