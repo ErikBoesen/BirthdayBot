@@ -30,7 +30,7 @@ def send(text, bot_id):
 students = get_students()
 message = None
 if students:
-    message = 'Happy birthday to '
+    message = 'Hoppy birthday to '
     if len(students) > 1:
         last = students.pop()
         message += ', '.join(students)
